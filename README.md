@@ -1,4 +1,4 @@
-# Plugins-Digi3D
+# Marbella 2007
 Tabla, órdenes y control de calidad para el proyecto de Marbella.
 
 * Configura Digi3D.NET para multi-codificación **Herramientas/Configuración/DigiNG/Interfaz de multi-codificación**.
