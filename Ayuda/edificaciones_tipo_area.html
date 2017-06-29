@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Edificaciones de tipo área</title>
+</head>
+<body>
+    <h2>Edificaciones de tipo área</h2>
+
+    <p>La restitución, deberá realizarse siempre apoyándose en la cumbrera, con el objeto de garantizar que se está representando fielmente el edificio/construcción y no se ha cometido ningún error en la proyección. En lo posible se tratará que los elementos de construcción sean ortogonales.</p>
+    <p>Sólo se representarán las irregularidades de la línea de edificación cuando a la escala de representación 1:1000 sean iguales o superiores a 0.5m  y en 1:5.000 sean iguales o superiores a 3 metros en la realidad.</p>
+    <p>En cada recinto de edificio, se incluirá una cota en la parte más alta de la edificación, si el centroide que se introduce en el recinto se sitúa en la parte más alta, este texto puede funcionar de cota de edificación. </p>
+    <p>Existen dos tipos de edificios:</p>
+
+    <ul>
+        <li><strong>De uso genérico:</strong> La propia diferenciación de los tipos constructivos (nave industrial, iglesia, marquesina, edificio...) ya supone una  especificación del uso de la construcción.</li>
+        <li><strong>Singulares:</strong> Edificios con nombre propio, significativos</li>
+    </ul>
+
+    <h3>Edificaciones o construcciones lineales</h3>
+
+    <p>Algunas construcciones, cuando su anchura sea inferior a 40cm, deberán tratarse como elementos lineales. Las entidades que pueden tener este comportamiento son:</p>
+
+    <ul>
+        <li>Bancal</li>
+        <li>Escalera</li>
+        <li>Muralla</li>
+        <li>Muro</li>
+        <li>Muro de contención</li>
+        <li>Pasarela peatonal elevada</li>
+    </ul>
+
+    <p><strong>Muro de contención, bancal:</strong> Si el muro  es menos  ancho de 0.40 cm, se considera muro de contención lineal.  En ningún caso, el muro de contención no se dibujará en su altura real , sino en la cota de la intersección del terreno con el muro. En algunos casos existe un murete o tapia sobre un muro de contención, que deberá  ser tratadas como entidades lineales, se deberán incluir las dos entidades "Muro de contención" y "Muro, pared o tapia" siguiendo sus reglas específicas.</p>
+    <p><strong>Muro:</strong> El muro, en este caso no soportará tierras, solo será elemento divisorio. Se deberán trazar siempre por el lado exterior y por la cumbrera. Cuando el ancho sea superior a 40 cm, será un elemento superficial, pero no recinto. </p>
+    <p><strong>Muralla:</strong> Igual que en el caso de muro, cuando su ancho sea superior a 40 cm, será un elemento superficial y solo si contiene tierras, se hacen las mismas consideraciones que para muros de contención, y será recinto, con su correspondiente centroide y su pie de muro de contención. </p>
+    <p><strong>Escalera:</strong>En el caso que no supere los 150 cm de ancho, se podrá representar el contorno de la escalera como peldaño de escalera, siendo esto un elemento decorativo lineal.</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Edificaciones de tipo línea</title>
+</head>
+<body>
+    <h2>Edificaciones de tipo línea</h2>
+
+    <p>Algunas construcciones, cuando su anchura sea inferior a 40cm, deberán tratarse como elementos lineales. Las entidades que pueden tener este comportamiento son:</p>
+
+    <ul>
+        <li>Bancal</li>
+        <li>Escalera</li>
+        <li>Muralla</li>
+        <li>Muro</li>
+        <li>Muro de contención</li>
+        <li>Pasarela peatonal elevada</li>
+    </ul>
+
+    <p><strong>Muro de contención, bancal:</strong> Si el muro  es menos  ancho de 0.40 cm, se considera muro de contención lineal.  En ningún caso, el muro de contención no se dibujará en su altura real , sino en la cota de la intersección del terreno con el muro. En algunos casos existe un murete o tapia sobre un muro de contención, que deberá  ser tratadas como entidades lineales, se deberán incluir las dos entidades "Muro de contención" y "Muro, pared o tapia" siguiendo sus reglas específicas.</p>
+    <p><strong>Muro:</strong> El muro, en este caso no soportará tierras, solo será elemento divisorio. Se deberán trazar siempre por el lado exterior y por la cumbrera. Cuando el ancho sea superior a 40 cm, será un elemento superficial, pero no recinto. </p>
+    <p><strong>Muralla:</strong> Igual que en el caso de muro, cuando su ancho sea superior a 40 cm, será un elemento superficial y solo si contiene tierras, se hacen las mismas consideraciones que para muros de contención, y será recinto, con su correspondiente centroide y su pie de muro de contención. </p>
+    <p><strong>Escalera:</strong>En el caso que no supere los 150 cm de ancho, se podrá representar el contorno de la escalera como peldaño de escalera, siendo esto un elemento decorativo lineal.</p>
+
+    <h2>Líneas de decoración</h2>
+    <p>También se han agrupado líneas que permiten complementar el sistema de modelización en las edificaciones, con líneas de decoración: “Línea de decoración de construcción” y “línea de construcción metálica y ciertas líneas  que ayudan a la interpretación del modelo.</p>
+    <p>Los siguientes tipo actúan siempre como líneas de decoración</p>
+
+    <ul>
+        <li>Peldaño de escaleras-gradas</li>
+        <li>Líneas deportivas</li>
+        <li>Línea de decoración de construcción</li>
+        <li>Estructura metálica</li>
+    </ul>
+</body>
+</html>

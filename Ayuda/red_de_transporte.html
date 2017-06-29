@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Red de transporte</title>
+</head>
+<body>
+    <h2>Red de transporte</h2>
+
+    <p>La restitución a escala 1:1000 en la red de transportes tiene las siguientes particularidades y deben registrase algunos elemento que no son usuales a esta escala, pero son imprescindibles en este modelo. Se dibujarán las siguientes líneas, en todos los viales del Término Municipal:</p>
+
+    <ul>
+        <li><strong>Línea blanca borde de carretera/autopista.</strong> Si existe es la línea más visible para el restituidor. En general separa la calzada, que es lo que tendrá la consideración de vial, del arcén. Se tendrá que forma el recinto de arcén, en el caso en que el ancho de este sea superior a 1.5 m. </li>
+        <li><strong>Límite de carretera.</strong> En caso de no existir la línea blanca. Por lo general se distingue con claridad aunque exista cuneta, y delimita el límite de la carretera o calle. </li>
+        <li><strong>Línea de bordillo.</strong> Se deberá usar este tipo de línea para todos los bordillos, aunque no sean bordes de vial. La línea de acera, cuando sea necesaria su inclusión, se restituirá también con esta línea. La línea de acera (bordillo) se deberá incluir cuando no exista edificación, o esté separada de la línea de fachada más de 0.5 metros.</li>
+        <li><strong>Línea de senda.</strong> Aquellas pistas sin ancho suficiente para el tráfico rodado sin pavimentar.</li>
+        <li><strong>Línea de pista.</strong> Aquellas pistas con ancho suficiente para el tráfico rodado  pavimentado. </li>
+        <li><strong>Línea de camino.</strong> Aquellas pistas  sin pavimento.</li>
+        <li><strong>Línea de rodadura.</strong> Rodadas en zona sin pavimentar.</li>
+        <li><strong>Boca de túnel.</strong> Tiene la consideración de línea 3DT. Puesto que marca la separación entre los tramos visto y no visto del vial en el que se encuentra, debe proyectarse sobre éste y desplazarse 10 cm hacia el tramo visto, con el fin de que se generen los triángulos adecuadamente para el MDT. De esta forma cerrará tanto el tramo visto como el no visto. Por tanto, la boca de túnel no debe formar parte del recinto del vial.</li>
+        <li><strong>Eje de viales.</strong> Aunque no exista correspondencia con un elemento real, se restituirán todos los ejes apoyados en el terreno, ya que ayudará a mejorar el modelo digital del terreno.</li>
+        <li><strong>Pintura blanca longitudinal vial.</strong> Pintura interior a los viales, marcas longitudinales continuas, discontinuas y de separación de carriles.  No formarán recintos,  pero tienen que ser polígonos cerrados, con el ancho real de la línea no permitiendo nunca líneas abiertas.</li>
+        <li><strong>Borde de aparcamiento en vial.</strong>  Delimita zona de aparcamiento en el vial y formará recinto. No se refiere a la pintura que delimita cada aparcamiento, sino a contorno o delimitación del conjunto de plazas de aparcamiento, que puede o no estar delimitada por pintura en su contorno.   Y que dentro de este recinto, puede o no, existir la división con pintura blanca para el especio de cada coche. Esta ultima pintura la llamaremos pintura blanca decoración de vial.</li>
+        <li><strong>Pintura blanca decoración aparcamiento.</strong> Pintura blanca que delimita el espacio de aparcamiento para cada vehículo. Solo se restituirá en aparcamiento de grandes superficies.</li>
+        <li><strong>Línea de pintura amarilla.</strong></li>
+        <li><strong>Pintura blanca  rayado, fechas y señales horizontales.</strong> No formarán recintos, porque no es necesarios que tengan centroide, pero tienen que ser polígonos cerrados, no permitiendo nunca líneas abiertas y que definan el grosor de la línea real.</li>
+        <li><strong>Pasos de cebra.</strong> No formarán recintos, porque no es necesarios que tengan centroide, pero tienen que ser polígonos cerrados, no permitiendo nunca líneas abiertas.</li>
+    </ul>
+
+    <p>En general, el borde de vial se compondrá a base de elementos planimétricos existentes, haciendo uso de la Línea auxiliar de cierre de vial  allí donde no existiese ninguno.</p>
+
+    <p>Las líneas de puente y pontón tienen la consideración de “líneas de decoración”, por tanto no formarán parte de la estructura de los viales. No obstante las curvas de nivel podrán finalizar en estas líneas.</p>
+
+
+    <h2>Cotas</h2>
+    <p>De acuerdo a lo especificado en el objeto Punto acotado, en las zonas urbanas donde no se hayan registrado las curvas de nivel, se deberá incluir un punto de cota en:</p>
+
+    <ul>
+        <li>Todos los cruces de calles, formen o no viales.</li>
+        <li>Cambios de pendiente.</li>
+        <li>Cambios de rasante.</li>
+        <li>Delante de túneles y en puentes.</li>
+        <li>Por lo menos cada 100 metros a lo largo de una vía.</li>
+    </ul>
+
+    <p>Cuando las curvas de nivel estén muy espaciadas también se deberán de incluir puntos acotados intermedios.</p>
+</body>
+</html>

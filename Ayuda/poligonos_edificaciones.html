@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Polígonos de edificaciones</title>
+</head>
+<body>
+    <div>
+        <img src="logo-azimutal-peq.png" />
+    </div>
+
+    <h2>Polígonos de edificaciones</h2>
+
+    <p>Una vez digitalizado cualquiera de los siguientes elementos, tendremos que crear un polígono de edificaciones mediante la opción <strong>Creación de polígonos de edificaciones</strong>:</p>
+
+    <table border="1">
+        <tr>
+            <th>Tipo de geometría</th>
+        </tr>
+        <tr><td>Chiringuito</td></tr>
+        <tr><td>Cobertizo o caseta</td></tr>
+        <tr><td>Construcción sin especificar</td></tr>
+        <tr><td>Depósito</td></tr>
+        <tr><td>Dique</td></tr>
+        <tr><td>Edificio privado</td></tr>
+        <tr><td>En construcción</td></tr>
+        <tr><td>Escalera</td></tr>
+        <tr><td>Gradas</td></tr>
+        <tr><td>Grua</td></tr>
+        <tr><td>Kiosko</td></tr>
+        <tr><td>Lucernario</td></tr>
+        <tr><td>Marquesina general</td></tr>
+        <tr><td>Monumentos</td></tr>
+        <tr><td>Muralla</td></tr>
+        <tr><td>Muro de contención</td></tr>
+        <tr><td>Nave industrial</td></tr>
+        <tr><td>Pantalán</td></tr>
+        <tr><td>Pasarela peatonal elevada</td></tr>
+        <tr><td>Patio</td></tr>
+        <tr><td>Piscina</td></tr>
+        <tr><td>Presa de embalse</td></tr>
+        <tr><td>Ruinas</td></tr>
+    </table>
+
+
+    <p>
+        Para crear un polígono de edificaciones seguiremos los siguientes pasos:
+
+        <ol>
+            <li>
+                Seleccionamos la opción <strong>Crear polígono de edificaciones</strong>
+
+                <br />Esa opción realiza las siguientes tareas:
+
+                <ul>
+                    <li>Activar únicamente la visualización de códigos de edificaciones.</li>
+                    <li>Generar una topología por inundación.</li>
+                    <li>Asignar como código activo el código Edificaciones_POL</li>
+                    <li>Ejecutar la orden PONER_ATR_R</li>
+                </ul>
+            </li>
+            <li>Seleccionamos el polígono que queremos definir. Para ello, al pasar el cursor por el área que quieres formar como Polígono de edificaciones, ésta se debe rellenar. Puede ocurrir tres cosas:
+        </ol>
+    </p>
+
+    <ol>
+        <li>
+            Que se inunde exactamente el área que quieres convertir en polígono de edificaciones. En este caso haz <strong>clic</strong> para marcar el relleno y pulsa la tecla <strong>espacio</strong> para confirmar.
+
+            <div>
+                <a href="poligono_edificaciones_sencillo.gif">
+                    <img width="200" height="150" src="poligono_edificaciones_sencillo.gif" />
+                </a>
+            </div>
+        </li>
+        <li>
+            Que se inunde únicamente parte del área que quieres convertir en polígono de edificaciones. En este caso tendrás que hacer <strong>Clic</strong> en el primer área y <strong>Control + Clic</strong> cada una de las zonas que definen el polígono. Una vez tengas todas las zonas marcadas, pulsa la tecla <strong>espacio</strong> para confirmar.
+
+            <div>
+                <a href="poligono_edificaciones_compuesto_por_multiples_areas.gif">
+                    <img width="200" height="150" src="poligono_edificaciones_compuesto_por_multiples_areas.gif" />
+                </a>
+            </div>
+
+        </li>
+        <li>
+            Que la zona que quieres inundar esté mal cerrada y al pasar el cursor sobre ella se inunde un área mucho más grande de lo que quieres inundar.
+
+            <p>Si al pasar el cursor por el área a inundar no se inunda nada o se inunda un área mucho mayor de lo que te interesa es posible que el área que te interesa no esté cerrada. Esto puede ser por lo siguiente:</p>
+
+            <ol>
+                <li>
+                    Porque no tengas todos los códigos necesarios encendidos.
+                    <br /><strong>Este caso no debería suceder</strong>: En caso de que suceda, comunícalo a tu contacto técnico, pues en teoría los polígonos de edificios
+                    se deben definir perfectamente si tenemos activos los códigos de Edificaciones, que son los códigos que activa la opción <strong>Creación de polígonos de edificaciones</strong>.
+
+                    <br /><br />Para resolver este problema:
+                    <ol>
+                        <li>Pulsa la tecla <strong>Esc</strong> para finalizar la orden de inundación.</li>
+                        <li>Enciende todos los códigos mediante la opción del menú <strong>Ver/Todos los códigos</strong></li>
+                        <li>
+                            Selecciona la opción <strong>Crear polígono de edificaciones (sin apagar códigos)</strong> que como su nombre indica, no enciende ni apaga ningún código.
+
+                            <div>
+                                <a href="activando_codigos_para_formar_poligono_edificaciones.gif">
+                                    <img width="200" height="150" src="activando_codigos_para_formar_poligono_edificaciones.gif" />
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Porque las líneas que delimitan el polígono que quieres crear no están cortadas entre sí.
+
+                    <br /><br />Para resolver este problema:
+                    <ol>
+                        <li>Pulsa la tecla <strong>Esc</strong> para finalizar la orden de inundación.</li>
+                        <li>
+                            Ejecuta cualquiera de las órdenes de Digi3D.NET para partir la línea, como EXT_P.
+
+                            <div>
+                                <a href="extendiendo_partiendo_para_crear_poligono.gif">
+                                    <img width="200" height="150" src="extendiendo_partiendo_para_crear_poligono.gif" />
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+
+        <li>Pulsamos la tecla <strong>Barra espaciadora</strong> para confirmar que el polígono está bien definido</li>
+        <li>Seleccionamos en el desplegable el tipo de polígono que acabamos de inundar.</li>
+        <li>Aceptamos el cuadro de diálogo.</li>
+    </ol>
+</body>
+</html>

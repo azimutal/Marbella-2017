@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Polígonos de hidrografía</title>
+</head>
+<body>
+    <div>
+        <img src="logo-azimutal-peq.png" />
+    </div>
+
+
+    <h2>Polígonos de hidrografía</h2>
+
+    <p>Si alguna de las siguientes geometrías tiene área, tendemos que crear un polígono de hidrografía mediante la opción <strong>Creación de polígonos de hidrografía</strong>:</p>
+
+    <table border="1">
+        <tr>
+            <th>Tipo de geometría</th>
+        </tr>
+        <tr>
+            <td>Lago, laguna</td>
+        </tr>
+        <tr>
+            <td>Zona pantanosa</td>
+        </tr>
+        <tr>
+            <td>Balsa, alberca</td>
+        </tr>
+        <tr>
+            <td>Embalse</td>
+        </tr>
+        <tr>
+            <td>Estanque</td>
+        </tr>
+        <tr>
+            <td>Fuente</td>
+        </tr>
+        <tr>
+            <td>Canal, acequia</td>
+        </tr>
+        <tr>
+            <td>Playa</td>
+        </tr>
+    </table>
+
+
+    <p>
+        Para crear un polígono de hidrografía seguiremos los siguientes pasos:
+
+        <ol>
+            <li>
+                Seleccionamos la opción <strong>Crear polígono de hidrografía</strong>.
+
+                <br />Esa opción realiza las siguientes tareas:
+
+                <ul>
+                    <li>Activar únicamente la visualización de códigos de hidrografía y edificaciones.</li>
+                    <li>Generar una topología por inundación.</li>
+                    <li>Asignar como código activo el código Hidrografía_POL</li>
+                    <li>Ejecutar la orden PONER_ATR_R</li>
+                </ul>
+            </li>
+            <li>Seleccionamos el polígono que queremos definir. Para ello, al pasar el cursor por el área que quieres formar como Polígono de hidrografía, ésta se debe rellenar. Puede ocurrir tres cosas:
+    </p>
+
+    <ol>
+        <li>
+            Que se inunde exactamente el área que quieres convertir en polígono de hidrografía. En este caso haz <strong>clic</strong> para marcar el relleno y pulsa la tecla <strong>espacio</strong> para confirmar.
+
+            <div>
+                <a href="poligono_hidrografia_sencillo.gif">
+                    <img width="200" height="150" src="poligono_hidrografia_sencillo.gif" />
+                </a>
+            </div>
+        </li>
+        <li>
+            Que se inunde únicamente parte del área que quieres convertir en polígono de hidrografía. En este caso tendrás que hacer <strong>Clic</strong> en el primer área y <strong>Control + Clic</strong> cada una de las zonas que definen el polígono. Una vez tengas todas las zonas marcadas, pulsa la tecla <strong>espacio</strong> para confirmar.
+
+            <div>
+                <a href="poligono_hidrografia_compuesto_por_multiples_areas.gif">
+                    <img width="200" height="150" src="poligono_hidrografia_compuesto_por_multiples_areas.gif" />
+                </a>
+            </div>
+
+        </li>
+        <li>
+            Que la zona que quieres inundar esté mal cerrada y al pasar el cursor sobre ella se inunde un área mucho más grande de lo que quieres inundar. 
+
+            <p>Si al pasar el cursor por el área a inundar no se inunda nada o se inunda un área mucho mayor de lo que te interesa es posible que el área que te interesa no esté cerrada. Esto puede ser por lo siguiente:</p>
+
+            <ol>
+                <li>
+                    Porque no tengas todos los códigos necesarios encendidos.
+                    <br /><strong>Este caso no debería suceder</strong>: En caso de que suceda, comunícalo a tu contacto técnico, pues en teoría los polígonos de hidrografía
+                    se deben definir perfectamente si tenemos activos los códigos de Hidrografía y de Edificaciones, que son los códigos que activa la opción <strong>Creación de polígonos de hidrografía</strong>.
+
+                    <br /><br />Para resolver este problema:
+                    <ol>
+                        <li>Pulsa la tecla <strong>Esc</strong> para finalizar la orden de inundación.</li>
+                        <li>Enciende todos los códigos mediante la opción del menú <strong>Ver/Todos los códigos</strong></li>
+                        <li>
+                            Selecciona la opción <strong>Crear polígono de hidrografía (sin apagar códigos)</strong> que como su nombre indica, no enciende ni apaga ningún código.
+
+                            <div>
+                                <a href="activando_codigos_para_formar_poligono.gif">
+                                    <img width="200" height="150" src="activando_codigos_para_formar_poligono.gif" />
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Porque las líneas que delimitan el polígono que quieres crear no están cortadas entre sí.
+
+                    <br /><br />Para resolver este problema:
+                    <ol>
+                        <li>Pulsa la tecla <strong>Esc</strong> para finalizar la orden de inundación.</li>
+                        <li>
+                            Ejecuta cualquiera de las órdenes de Digi3D.NET para partir la línea, como EXT_P.
+
+                            <div>
+                                <a href="extendiendo_partiendo_para_crear_poligono.gif">
+                                    <img width="200" height="150" src="extendiendo_partiendo_para_crear_poligono.gif" />
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+
+        <li>Pulsamos la tecla <strong>Barra espaciadora</strong> para confirmar que el polígono está bien definido</li>
+        <li>Seleccionamos en el desplegable el tipo de polígono que acabamos de inundar.</li>
+        <li>Aceptamos el cuadro de diálogo.</li>
+    </ol>
+</body>
+</html>
